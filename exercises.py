@@ -12,6 +12,14 @@ def find_summands(summ_value: int) -> str:
     Example:
         >> find_summands(12)
         '5 + 7 = 12'
+
+    Генерирует строковое представление слагаемых, которые дают заданное значение суммы.
+
+    Аргументы:
+        summ_value (int): Значение суммы.
+
+    Возвращает:
+        str: Строковое представление слагаемых в формате "первое_слагаемое + второе_слагаемое = сумма".
     """
     s = str(summ_value)
     l = len(s) - 1
@@ -27,6 +35,15 @@ def find_minuend_and_subtrahend(difference_value: int) -> str:
         difference_value (int): The difference value for the subtraction problem.
     Returns:
         str: A string representing the subtraction problem in the format "minuend - subtrahend = difference".
+
+    Генерирует строковое представление вычитания с заданным значением разности.
+
+    Аргументы:
+        difference_value (int): Значение разности для операции вычитания.
+
+    Возвращает:
+        str: Строковое представление операции вычитания в формате "уменьшаемое - вычитаемое = разность".
+
     """
     d = str(difference_value)
     l = len(d)
